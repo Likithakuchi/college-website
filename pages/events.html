@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Likitha University | Events</title>
+  <meta name="description" content="Discover workshops, seminars, hackathons, sports meets, and cultural festivals happening at Likitha University.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <div class="loading-text">LIKITHA UNIVERSITY</div>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="top-info">
+          <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+          <span><i class="fas fa-envelope"></i> admissions@likitha.edu</span>
+        </div>
+        <div class="top-actions">
+          <span><i class="fas fa-calendar-alt"></i> Fall Admissions Open 2026-27</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="nav-bar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo-wrapper">
+          <svg class="logo-svg" width="40" height="40" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+            <defs>
+              <linearGradient id="logoGradSub" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-color)" />
+                <stop offset="100%" stop-color="#f472b6" />
+              </linearGradient>
+            </defs>
+            <rect width="500" height="500" rx="100" fill="url(#logoGradSub)" />
+            <path d="M180 120 V380 H350" fill="none" stroke="#ffffff" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="logo-text">
+            <h1 class="logo-title">Likitha University</h1>
+            <div class="logo-motto">Inspiring Innovation & Leadership</div>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
+            <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+            <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+            <li class="nav-item"><a href="placements.html" class="nav-link">Placements</a></li>
+            <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+            <li class="nav-item"><a href="events.html" class="nav-link active">Events</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+            <i class="fas fa-moon moon-icon"></i>
+            <i class="fas fa-sun sun-icon"></i>
+          </button>
+          <button class="hamburger" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: linear-gradient(135deg, var(--primary-color), var(--accent-hover)); color: #fff; padding: 10rem 0 5rem 0; text-align: center;">
+    <div class="container">
+      <span class="section-tag" style="background-color: rgba(255,255,255,0.15); color: #fff;">Campus Highlights</span>
+      <h2 style="font-size: 3rem; font-weight: 800; margin-top: 0.5rem;">Events & Symposiums</h2>
+      <p style="color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 600px; margin: 1rem auto 0 auto;">Participate in hackathons, seminars, sports meets, and national research symposiums.</p>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="events-main-section">
+    <div class="container">
+      
+      <!-- Countdown Banner -->
+      <div class="countdown-banner animate-on-scroll animate-zoom-in" id="countdown-timer">
+        <div class="countdown-wrapper">
+          <div class="countdown-title">
+            <span class="alert-badge" style="background-color: rgba(255, 255, 255, 0.25); color: #ffffff; margin-bottom: 0.5rem; display: inline-block;">Feature Event</span>
+            <h3>National Hackathon '26 Begins In:</h3>
+            <p>Annual engineering challenge to build AI solutions for urban sustainability.</p>
+          </div>
+          <div class="timer-box">
+            <div class="timer-item">
+              <span class="timer-num" id="days">00</span>
+              <span class="timer-label">Days</span>
+            </div>
+            <div class="timer-item">
+              <span class="timer-num" id="hours">00</span>
+              <span class="timer-label">Hours</span>
+            </div>
+            <div class="timer-item">
+              <span class="timer-num" id="minutes">00</span>
+              <span class="timer-label">Mins</span>
+            </div>
+            <div class="timer-item">
+              <span class="timer-num" id="seconds">00</span>
+              <span class="timer-label">Secs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Events Grid -->
+      <div class="grid-3">
+        
+        <!-- Event 1 -->
+        <div class="card animate-on-scroll animate-slide-up">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/events/event1.svg" alt="Likitha Hackathon">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">Coding Hackathon</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Likitha Hackathon 2026</h3>
+            <div class="event-details">
+              <span><i class="fas fa-calendar-alt"></i> August 12-14, 2026</span>
+              <span><i class="fas fa-map-marker-alt"></i> Seminar Hall A & labs</span>
+            </div>
+            <p class="card-desc">48-hour prototype marathon where developers build smart tools for solar grid management and traffic control models. Registrations open.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary btn-sm" onclick="showToast('✔ Registered for Likitha Hackathon!', 'success'); return false;">Register Now</a>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-ticket-alt"></i> Free Entry</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="card animate-on-scroll animate-slide-up" style="transition-delay: 0.05s;">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/events/event2.svg" alt="Likitha Technical Seminar">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">Seminar</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Cloud Infrastructure Seminar</h3>
+            <div class="event-details">
+              <span><i class="fas fa-calendar-alt"></i> August 20, 2026</span>
+              <span><i class="fas fa-map-marker-alt"></i> Dr. Eleanor Vance Hall</span>
+            </div>
+            <p class="card-desc">Industry guest speakers from Microsoft Azure discuss decentralization cloud databases, serverless computing, and distributed cluster configurations.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary btn-sm" onclick="showToast('✔ Registered for Cloud Seminar!', 'success'); return false;">Register Now</a>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-ticket-alt"></i> Seats Limited</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="card animate-on-scroll animate-slide-up" style="transition-delay: 0.1s;">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/events/event3.svg" alt="Likitha Workshop">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">Hands-on Workshop</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Robotics & VLSI Design Lab</h3>
+            <div class="event-details">
+              <span><i class="fas fa-calendar-alt"></i> September 5, 2026</span>
+              <span><i class="fas fa-map-marker-alt"></i> Embedded Hardware Lab</span>
+            </div>
+            <p class="card-desc">Practical laboratory training on microcontrollers programming, circuit boards wiring, VLSI layouts simulators, and assembly of robotic models.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary btn-sm" onclick="showToast('✔ Registered for Robotics Workshop!', 'success'); return false;">Register Now</a>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-ticket-alt"></i> $15 Lab Kit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="card animate-on-scroll animate-slide-up">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/events/event4.svg" alt="Likitha Cultural Fest">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">Cultural Fest</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Likitha Cultural Fest (Aero-Fiesta)</h3>
+            <div class="event-details">
+              <span><i class="fas fa-calendar-alt"></i> October 2-4, 2026</span>
+              <span><i class="fas fa-map-marker-alt"></i> Open Auditorium Complex</span>
+            </div>
+            <p class="card-desc">Three days of musical band face-offs, street theater acts, art exhibits, digital design showdowns, and international foods festival stalls.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary btn-sm" onclick="showToast('✔ Ticket booked for Aero-Fiesta!', 'success'); return false;">Get Tickets</a>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-ticket-alt"></i> Open to Public</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 5 -->
+        <div class="card animate-on-scroll animate-slide-up" style="transition-delay: 0.05s;">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/events/event5.svg" alt="Likitha Sports Meet">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">Sports Meet</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Annual Sports Meet '26</h3>
+            <div class="event-details">
+              <span><i class="fas fa-calendar-alt"></i> October 18-20, 2026</span>
+              <span><i class="fas fa-map-marker-alt"></i> Likitha Sports Arena</span>
+            </div>
+            <p class="card-desc">Inter-departmental track events, basketball finals, soccer trophy match, tennis singles tournament, and powerlifting presentations.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary btn-sm" onclick="showToast('✔ Registered for Sports Meet details!', 'success'); return false;">View Fixtures</a>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-ticket-alt"></i> Free entry</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event 6 -->
+        <div class="card animate-on-scroll animate-slide-up" style="transition-delay: 0.1s;">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/events/event6.svg" alt="Likitha Technical Symposium">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">Symposium</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Next-Gen Tech Symposium</h3>
+            <div class="event-details">
+              <span><i class="fas fa-calendar-alt"></i> November 10, 2026</span>
+              <span><i class="fas fa-map-marker-alt"></i> Likitha Conference Hall</span>
+            </div>
+            <p class="card-desc">Call for research papers on machine learning ethics, renewable micro-grids, eco concrete structural designs, and business models incubator studies.</p>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary btn-sm" onclick="showToast('✔ Registered for Research Call!', 'success'); return false;">Register Now</a>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-ticket-alt"></i> Research Track</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>Likitha University</h3>
+          <p>
+            Ranked amongst the nation's premium engineering and research hubs, Likitha University delivers excellence in higher technical education and career launch.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Institution</a></li>
+            <li><a href="courses.html">Courses & Intake</a></li>
+            <li><a href="departments.html">About Departments</a></li>
+            <li><a href="placements.html">Placement Reports</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="contact.html">Campus Address</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Departments</h3>
+          <ul class="footer-links">
+            <li><a href="departments.html">Computer Science</a></li>
+            <li><a href="departments.html">Information Technology</a></li>
+            <li><a href="departments.html">Artificial Intelligence</a></li>
+            <li><a href="departments.html">Electronics & Comm</a></li>
+            <li><a href="departments.html">Mechanical Engg</a></li>
+            <li><a href="departments.html">Civil Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>100 Likitha University campus, Tech Boulevard, Sector-12, Likitha City, AC 98012</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 123-4567 | +1 (555) 123-4568</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@likitha.edu | admissions@likitha.edu</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon - Sat: 9:00 AM to 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Likitha University. All Rights Reserved. Designed with absolute precision.</p>
+        <p>
+          <a href="#" style="margin-right: 1rem;">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top button -->
+  <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="../script.js"></script>
+</body>
+</html>

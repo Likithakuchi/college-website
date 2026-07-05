@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Likitha University | About Us</title>
+  <meta name="description" content="Learn about the history, vision, mission, governance leadership, affiliations, accreditations, and achievements of Likitha University.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <div class="loading-text">LIKITHA UNIVERSITY</div>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="top-info">
+          <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+          <span><i class="fas fa-envelope"></i> admissions@likitha.edu</span>
+        </div>
+        <div class="top-actions">
+          <span><i class="fas fa-calendar-alt"></i> Fall Admissions Open 2026-27</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="nav-bar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo-wrapper">
+          <svg class="logo-svg" width="40" height="40" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+            <defs>
+              <linearGradient id="logoGradSub" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-color)" />
+                <stop offset="100%" stop-color="#f472b6" />
+              </linearGradient>
+            </defs>
+            <rect width="500" height="500" rx="100" fill="url(#logoGradSub)" />
+            <path d="M180 120 V380 H350" fill="none" stroke="#ffffff" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="logo-text">
+            <h1 class="logo-title">Likitha University</h1>
+            <div class="logo-motto">Inspiring Innovation & Leadership</div>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+            <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
+            <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+            <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+            <li class="nav-item"><a href="placements.html" class="nav-link">Placements</a></li>
+            <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+            <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+            <i class="fas fa-moon moon-icon"></i>
+            <i class="fas fa-sun sun-icon"></i>
+          </button>
+          <button class="hamburger" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: linear-gradient(135deg, var(--primary-color), var(--accent-hover)); color: #fff; padding: 10rem 0 5rem 0; text-align: center;">
+    <div class="container">
+      <span class="section-tag" style="background-color: rgba(255,255,255,0.15); color: #fff;">Learn Who We Are</span>
+      <h2 style="font-size: 3rem; font-weight: 800; margin-top: 0.5rem;">About Our Institution</h2>
+      <p style="color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 600px; margin: 1rem auto 0 auto;">A journey of academic excellence, research advancements, and career launches over two decades.</p>
+    </div>
+  </section>
+
+  <!-- History Section -->
+  <section class="history-section">
+    <div class="container">
+      <div class="placement-stats-row">
+        <div class="animate-on-scroll animate-slide-up">
+          <span class="section-tag">Since 2005</span>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Our History</h2>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Likitha University was founded in 2005 by the Likitha Educational Trust with the core goal of bridging the gap between industry needs and technical academic curriculum in the region.
+          </p>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Starting with just two departments (Computer Science and Electronics) and a modest cohort of 120 students, Likitha has grown dynamically into a multidisciplinary university campus offering engineering, management, and research courses to over 5,000+ students.
+          </p>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Over the years, we have forged active collaborations with companies like TCS, Infosys, and Qualcomm, created a state-of-the-art incubation and startup cell, and built scientific laboratories where students solve global engineering issues.
+          </p>
+        </div>
+        <div class="animate-on-scroll animate-zoom-in" style="display: flex; justify-content: center;">
+          <img src="../assets/images/campus/history.svg" alt="Likitha College Campus Evolution" style="border-radius: var(--radius-lg); box-shadow: var(--hover-shadow); width: 100%; height: 350px; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section class="vision-mission-section" style="background-color: var(--surface-alt);">
+    <div class="container">
+      <div class="grid-3" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+        <!-- Vision -->
+        <div class="stats-card animate-on-scroll animate-slide-up" style="text-align: left; padding: 3rem;">
+          <div class="stats-icon" style="background-color: var(--accent-glow); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md);"><i class="fas fa-eye"></i></div>
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin: 1.5rem 0 1rem 0;">Our Vision</h3>
+          <p style="color: var(--text-muted); line-height: 1.7;">
+            To be recognized globally as a premier university of technical education and scientific research, fostering ethical leaders who innovate and transform industries.
+          </p>
+        </div>
+
+        <!-- Mission -->
+        <div class="stats-card animate-on-scroll animate-slide-up" style="text-align: left; padding: 3rem; transition-delay: 0.1s;">
+          <div class="stats-icon" style="background-color: var(--accent-glow); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md);"><i class="fas fa-bullseye"></i></div>
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin: 1.5rem 0 1rem 0;">Our Mission</h3>
+          <ul style="color: var(--text-muted); padding-left: 1.2rem; line-height: 1.8;">
+            <li>To provide rigorous, industry-aligned curricula that build robust problem-solving competencies.</li>
+            <li>To promote state-of-the-art laboratory research that addresses contemporary real-world challenges.</li>
+            <li>To cultivate high ethical standards, entrepreneurial mindsets, and corporate collaboration skills.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Messages -->
+  <section class="leadership-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Governance</span>
+        <h2 class="section-title">Leadership Messages</h2>
+        <p class="section-desc">Hear directly from our trustees and executive leaders driving academic expansion.</p>
+      </div>
+
+      <!-- Chairman Message -->
+      <div class="placement-stats-row" style="margin-bottom: 5rem;">
+        <div class="animate-on-scroll animate-zoom-in" style="display: flex; justify-content: center;">
+          <img src="../assets/images/faculty/chairman.svg" alt="Chairman Dr. Arthur Pendelton" style="border-radius: var(--radius-lg); box-shadow: var(--hover-shadow); width: 100%; max-width: 380px; height: 380px; object-fit: cover; border: 4px solid var(--accent-color);">
+        </div>
+        <div class="animate-on-scroll animate-slide-up" style="display: flex; flex-direction: column; justify-content: center;">
+          <span class="section-tag">Chairman's Desk</span>
+          <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem;">Dr. Arthur Pendelton</h3>
+          <p style="font-size: 0.9rem; color: var(--accent-color); font-weight: 600; margin-bottom: 1.5rem;">Ph.D. in Management, Former Tech Investor</p>
+          <blockquote style="font-style: italic; color: var(--text-muted); border-left: 4px solid var(--accent-color); padding-left: 1.5rem; margin-bottom: 1.5rem; font-size: 1.05rem;">
+            "Higher education is more than preparing for job interviews; it's about engineering the foundations of character and cognitive innovation. At Likitha, we strive to establish a premium incubator where students can prototype their dreams."
+          </blockquote>
+          <p style="color: var(--text-muted);">
+            Our investments in laboratory gear, computing clouds, and faculty development ensure that every student has access to top resources to succeed in their respective fields.
+          </p>
+        </div>
+      </div>
+
+      <!-- Principal Message -->
+      <div class="placement-stats-row" style="grid-template-columns: 1.2fr 0.8fr;">
+        <div class="animate-on-scroll animate-slide-up" style="display: flex; flex-direction: column; justify-content: center;">
+          <span class="section-tag">Principal's Desk</span>
+          <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem;">Dr. Eleanor Vance</h3>
+          <p style="font-size: 0.9rem; color: var(--accent-color); font-weight: 600; margin-bottom: 1.5rem;">Ph.D. in Computer Science, IEEE Senior Fellow</p>
+          <blockquote style="font-style: italic; color: var(--text-muted); border-left: 4px solid var(--accent-color); padding-left: 1.5rem; margin-bottom: 1.5rem; font-size: 1.05rem;">
+            "We are committed to providing educational experiences that blend conceptual rigor with hands-on practice. Our students undergo project-based learning modules from day one, fostering high employability and technical confidence."
+          </blockquote>
+          <p style="color: var(--text-muted);">
+            With an emphasis on research papers, coding hackathons, and sports events, Likitha encourages a balanced campus lifestyle where talent is nurtured and celebrated.
+          </p>
+        </div>
+        <div class="animate-on-scroll animate-zoom-in" style="display: flex; justify-content: center; grid-row: 1 / 2;">
+          <img src="../assets/images/faculty/principal.svg" alt="Principal Dr. Eleanor Vance" style="border-radius: var(--radius-lg); box-shadow: var(--hover-shadow); width: 100%; max-width: 380px; height: 380px; object-fit: cover; border: 4px solid var(--accent-color);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accreditations, Affiliations & Rankings -->
+  <section class="accreditation-section" style="background-color: var(--surface-alt);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Accreditations, Affiliation & Rankings</h2>
+        <p class="section-desc">Likitha is recognized by top regulatory bodies for maintaining outstanding education quality standards.</p>
+      </div>
+
+      <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+        <!-- Acc 1 -->
+        <div class="stats-card animate-on-scroll animate-slide-up" style="background-color: var(--surface-color);">
+          <div class="stats-icon" style="color: var(--success-color);"><i class="fas fa-shield-alt"></i></div>
+          <h4 style="margin: 1rem 0 0.5rem 0; font-size: 1.25rem;">NAAC A++ Grade</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Accredited with highest CGPA of 3.85/4.0 by National Assessment and Accreditation Council.</p>
+        </div>
+
+        <!-- Acc 2 -->
+        <div class="stats-card animate-on-scroll animate-slide-up" style="background-color: var(--surface-color); transition-delay: 0.1s;">
+          <div class="stats-icon" style="color: var(--accent-color);"><i class="fas fa-university"></i></div>
+          <h4 style="margin: 1rem 0 0.5rem 0; font-size: 1.25rem;">State Tech Affiliated</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Affiliated with State Technical University, ensuring recognized degrees and structured syllabi.</p>
+        </div>
+
+        <!-- Acc 3 -->
+        <div class="stats-card animate-on-scroll animate-slide-up" style="background-color: var(--surface-color); transition-delay: 0.2s;">
+          <div class="stats-icon" style="color: var(--accent-color);"><i class="fas fa-check-double"></i></div>
+          <h4 style="margin: 1rem 0 0.5rem 0; font-size: 1.25rem;">NBA Accredited</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">All major undergraduate engineering programs (CSE, IT, ECE) are National Board of Accreditation certified.</p>
+        </div>
+
+        <!-- Acc 4 -->
+        <div class="stats-card animate-on-scroll animate-slide-up" style="background-color: var(--surface-color); transition-delay: 0.3s;">
+          <div class="stats-icon" style="color: #fbbf24;"><i class="fas fa-trophy"></i></div>
+          <h4 style="margin: 1rem 0 0.5rem 0; font-size: 1.25rem;">Top 50 NIRF Ranking</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Ranked #42 nationally in engineering categories under National Institutional Ranking Framework.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>Likitha University</h3>
+          <p>
+            Ranked amongst the nation's premium engineering and research hubs, Likitha University delivers excellence in higher technical education and career launch.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Institution</a></li>
+            <li><a href="courses.html">Courses & Intake</a></li>
+            <li><a href="departments.html">About Departments</a></li>
+            <li><a href="placements.html">Placement Reports</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="contact.html">Campus Address</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Departments</h3>
+          <ul class="footer-links">
+            <li><a href="departments.html">Computer Science</a></li>
+            <li><a href="departments.html">Information Technology</a></li>
+            <li><a href="departments.html">Artificial Intelligence</a></li>
+            <li><a href="departments.html">Electronics & Comm</a></li>
+            <li><a href="departments.html">Mechanical Engg</a></li>
+            <li><a href="departments.html">Civil Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>100 Likitha University campus, Tech Boulevard, Sector-12, Likitha City, AC 98012</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 123-4567 | +1 (555) 123-4568</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@likitha.edu | admissions@likitha.edu</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon - Sat: 9:00 AM to 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Likitha University. All Rights Reserved. Designed with absolute precision.</p>
+        <p>
+          <a href="#" style="margin-right: 1rem;">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top button -->
+  <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="../script.js"></script>
+</body>
+</html>

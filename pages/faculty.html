@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Likitha University | Faculty Directory</title>
+  <meta name="description" content="Meet our highly qualified professors, researchers, and HODs guiding the academic tracks at Likitha University.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <div class="loading-text">LIKITHA UNIVERSITY</div>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="top-info">
+          <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+          <span><i class="fas fa-envelope"></i> admissions@likitha.edu</span>
+        </div>
+        <div class="top-actions">
+          <span><i class="fas fa-calendar-alt"></i> Fall Admissions Open 2026-27</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="nav-bar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo-wrapper">
+          <svg class="logo-svg" width="40" height="40" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+            <defs>
+              <linearGradient id="logoGradSub" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-color)" />
+                <stop offset="100%" stop-color="#f472b6" />
+              </linearGradient>
+            </defs>
+            <rect width="500" height="500" rx="100" fill="url(#logoGradSub)" />
+            <path d="M180 120 V380 H350" fill="none" stroke="#ffffff" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="logo-text">
+            <h1 class="logo-title">Likitha University</h1>
+            <div class="logo-motto">Inspiring Innovation & Leadership</div>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
+            <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+            <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+            <li class="nav-item"><a href="placements.html" class="nav-link">Placements</a></li>
+            <li class="nav-item"><a href="faculty.html" class="nav-link active">Faculty</a></li>
+            <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+            <i class="fas fa-moon moon-icon"></i>
+            <i class="fas fa-sun sun-icon"></i>
+          </button>
+          <button class="hamburger" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: linear-gradient(135deg, var(--primary-color), var(--accent-hover)); color: #fff; padding: 10rem 0 5rem 0; text-align: center;">
+    <div class="container">
+      <span class="section-tag" style="background-color: rgba(255,255,255,0.15); color: #fff;">Mentorship Board</span>
+      <h2 style="font-size: 3rem; font-weight: 800; margin-top: 0.5rem;">Faculty Directory</h2>
+      <p style="color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 600px; margin: 1rem auto 0 auto;">Meet our researchers, professors, and advisors shaping modern minds.</p>
+    </div>
+  </section>
+
+  <!-- Faculty Listing -->
+  <section class="faculty-section">
+    <div class="container">
+      
+      <!-- Search & Filters -->
+      <div class="search-filter-bar">
+        <div class="search-input-wrapper">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="faculty-search" placeholder="Search faculty by name (e.g. Eleanor)...">
+        </div>
+        <div>
+          <select id="dept-filter" class="filter-select">
+            <option value="all">All Departments</option>
+            <option value="cse">Computer Science</option>
+            <option value="it">Information Technology</option>
+            <option value="aids">AI & Data Science</option>
+            <option value="ece">Electronics & Comm</option>
+            <option value="eee">Electrical & Electronics</option>
+            <option value="mech">Mechanical Engg</option>
+            <option value="civil">Civil Engineering</option>
+            <option value="mba">MBA Business School</option>
+            <option value="mca">MCA Computer Applications</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Directory Grid -->
+      <div class="grid-3" id="faculty-cards-container">
+        
+        <!-- Dr. Eleanor Vance -->
+        <div class="card faculty-card animate-on-scroll animate-slide-up" data-dept="cse">
+          <div class="card-img-wrapper" style="height: 250px;">
+            <img class="card-img" src="../assets/images/faculty/principal.svg" alt="Dr. Eleanor Vance">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">CSE</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Dr. Eleanor Vance</h3>
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--accent-color); margin-bottom: 1rem;">Principal & Professor</p>
+            <div class="faculty-meta">
+              <strong>Qual:</strong> <span>Ph.D. in Computer Science (MIT)</span>
+              <strong>Exp:</strong> <span>18 Years Academic / 4 Years Industry</span>
+              <strong>Dept:</strong> <span>Computer Science Engineering</span>
+            </div>
+            <div class="card-footer" style="padding-top: 0.75rem;">
+              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-envelope"></i> e.vance@likitha.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dr. Arthur Pendelton -->
+        <div class="card faculty-card animate-on-scroll animate-slide-up" data-dept="mba" style="transition-delay: 0.05s;">
+          <div class="card-img-wrapper" style="height: 250px;">
+            <img class="card-img" src="../assets/images/faculty/chairman.svg" alt="Dr. Arthur Pendelton">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">MBA</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Dr. Arthur Pendelton</h3>
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--accent-color); margin-bottom: 1rem;">Professor & Board Trustee</p>
+            <div class="faculty-meta">
+              <strong>Qual:</strong> <span>Ph.D. in Finance (Stanford)</span>
+              <strong>Exp:</strong> <span>22 Years Academic / 8 Years Corporate</span>
+              <strong>Dept:</strong> <span>MBA Business School</span>
+            </div>
+            <div class="card-footer" style="padding-top: 0.75rem;">
+              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-envelope"></i> a.pendelton@likitha.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dr. Rajesh Khanna -->
+        <div class="card faculty-card animate-on-scroll animate-slide-up" data-dept="cse" style="transition-delay: 0.1s;">
+          <div class="card-img-wrapper" style="height: 250px;">
+            <img class="card-img" src="../assets/images/faculty/hod_cse.svg" alt="Dr. Rajesh Khanna">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">CSE</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Dr. Rajesh Khanna</h3>
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--accent-color); margin-bottom: 1rem;">HOD & Professor</p>
+            <div class="faculty-meta">
+              <strong>Qual:</strong> <span>Ph.D. in Cloud Networks (IIT)</span>
+              <strong>Exp:</strong> <span>15 Years Academic / 2 Years Industry</span>
+              <strong>Dept:</strong> <span>Computer Science Engineering</span>
+            </div>
+            <div class="card-footer" style="padding-top: 0.75rem;">
+              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-envelope"></i> r.khanna@likitha.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dr. Sarah Jenkins -->
+        <div class="card faculty-card animate-on-scroll animate-slide-up" data-dept="it">
+          <div class="card-img-wrapper" style="height: 250px;">
+            <img class="card-img" src="../assets/images/faculty/hod_it.svg" alt="Dr. Sarah Jenkins">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">IT</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Dr. Sarah Jenkins</h3>
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--accent-color); margin-bottom: 1rem;">HOD & Assoc. Professor</p>
+            <div class="faculty-meta">
+              <strong>Qual:</strong> <span>Ph.D. in Database Algos (Caltech)</span>
+              <strong>Exp:</strong> <span>10 Years Academic / 3 Years Industry</span>
+              <strong>Dept:</strong> <span>Information Technology</span>
+            </div>
+            <div class="card-footer" style="padding-top: 0.75rem;">
+              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-envelope"></i> s.jenkins@likitha.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dr. Alan Turing Jr. -->
+        <div class="card faculty-card animate-on-scroll animate-slide-up" data-dept="aids" style="transition-delay: 0.05s;">
+          <div class="card-img-wrapper" style="height: 250px;">
+            <img class="card-img" src="../assets/images/faculty/hod_aids.svg" alt="Dr. Alan Turing Jr.">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">AI & DS</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Dr. Alan Turing Jr.</h3>
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--accent-color); margin-bottom: 1rem;">HOD & Professor</p>
+            <div class="faculty-meta">
+              <strong>Qual:</strong> <span>Ph.D. in Neural Networks (Oxford)</span>
+              <strong>Exp:</strong> <span>14 Years Academic / 5 Years Research</span>
+              <strong>Dept:</strong> <span>AI & Data Science</span>
+            </div>
+            <div class="card-footer" style="padding-top: 0.75rem;">
+              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-envelope"></i> a.turing@likitha.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dr. Amanda Cooper -->
+        <div class="card faculty-card animate-on-scroll animate-slide-up" data-dept="ece" style="transition-delay: 0.1s;">
+          <div class="card-img-wrapper" style="height: 250px;">
+            <img class="card-img" src="../assets/images/faculty/hod_ece.svg" alt="Dr. Amanda Cooper">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">ECE</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Dr. Amanda Cooper</h3>
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--accent-color); margin-bottom: 1rem;">HOD & Assoc. Professor</p>
+            <div class="faculty-meta">
+              <strong>Qual:</strong> <span>Ph.D. in VLSI Systems (NTU Singapore)</span>
+              <strong>Exp:</strong> <span>12 Years Academic</span>
+              <strong>Dept:</strong> <span>Electronics & Communication</span>
+            </div>
+            <div class="card-footer" style="padding-top: 0.75rem;">
+              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-envelope"></i> a.cooper@likitha.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dr. Nikola Tesla III -->
+        <div class="card faculty-card animate-on-scroll animate-slide-up" data-dept="eee">
+          <div class="card-img-wrapper" style="height: 250px;">
+            <img class="card-img" src="../assets/images/faculty/hod_eee.svg" alt="Dr. Nikola Tesla III">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">EEE</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Dr. Nikola Tesla III</h3>
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--accent-color); margin-bottom: 1rem;">HOD & Professor</p>
+            <div class="faculty-meta">
+              <strong>Qual:</strong> <span>Ph.D. in Power Grids (ETH Zurich)</span>
+              <strong>Exp:</strong> <span>16 Years Academic / 1 Year Industry</span>
+              <strong>Dept:</strong> <span>Electrical & Electronics</span>
+            </div>
+            <div class="card-footer" style="padding-top: 0.75rem;">
+              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-envelope"></i> n.tesla@likitha.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dr. James Watt IV -->
+        <div class="card faculty-card animate-on-scroll animate-slide-up" data-dept="mech" style="transition-delay: 0.05s;">
+          <div class="card-img-wrapper" style="height: 250px;">
+            <img class="card-img" src="../assets/images/faculty/hod_mech.svg" alt="Dr. James Watt IV">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">MECH</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Dr. James Watt IV</h3>
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--accent-color); margin-bottom: 1rem;">HOD & Professor</p>
+            <div class="faculty-meta">
+              <strong>Qual:</strong> <span>Ph.D. in Fluid Dynamics (Munich)</span>
+              <strong>Exp:</strong> <span>15 Years Academic / 3 Years Industry</span>
+              <strong>Dept:</strong> <span>Mechanical Engineering</span>
+            </div>
+            <div class="card-footer" style="padding-top: 0.75rem;">
+              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-envelope"></i> j.watt@likitha.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dr. Marcus Vitruvius -->
+        <div class="card faculty-card animate-on-scroll animate-slide-up" data-dept="civil" style="transition-delay: 0.1s;">
+          <div class="card-img-wrapper" style="height: 250px;">
+            <img class="card-img" src="../assets/images/faculty/hod_civil.svg" alt="Dr. Marcus Vitruvius">
+            <span class="card-badge" style="background-color: var(--accent-color); color: #fff;">CIVIL</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Dr. Marcus Vitruvius</h3>
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--accent-color); margin-bottom: 1rem;">HOD & Assoc. Professor</p>
+            <div class="faculty-meta">
+              <strong>Qual:</strong> <span>Ph.D. in Structural Systems (Rome)</span>
+              <strong>Exp:</strong> <span>11 Years Academic / 5 Years Field</span>
+              <strong>Dept:</strong> <span>Civil Engineering</span>
+            </div>
+            <div class="card-footer" style="padding-top: 0.75rem;">
+              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-envelope"></i> m.vitruvius@likitha.edu</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>Likitha University</h3>
+          <p>
+            Ranked amongst the nation's premium engineering and research hubs, Likitha University delivers excellence in higher technical education and career launch.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Institution</a></li>
+            <li><a href="courses.html">Courses & Intake</a></li>
+            <li><a href="departments.html">About Departments</a></li>
+            <li><a href="placements.html">Placement Reports</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="contact.html">Campus Address</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Departments</h3>
+          <ul class="footer-links">
+            <li><a href="departments.html">Computer Science</a></li>
+            <li><a href="departments.html">Information Technology</a></li>
+            <li><a href="departments.html">Artificial Intelligence</a></li>
+            <li><a href="departments.html">Electronics & Comm</a></li>
+            <li><a href="departments.html">Mechanical Engg</a></li>
+            <li><a href="departments.html">Civil Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>100 Likitha University campus, Tech Boulevard, Sector-12, Likitha City, AC 98012</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 123-4567 | +1 (555) 123-4568</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@likitha.edu | admissions@likitha.edu</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon - Sat: 9:00 AM to 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Likitha University. All Rights Reserved. Designed with absolute precision.</p>
+        <p>
+          <a href="#" style="margin-right: 1rem;">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top button -->
+  <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="../script.js"></script>
+</body>
+</html>

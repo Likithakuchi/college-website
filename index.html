@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Likitha University | Home</title>
+  <meta name="description" content="Welcome to Likitha University. Discover our admissions, world-class courses, placement records, campus life, and achievements. Shape your future with us.">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CDN for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <div class="loading-text">LIKITHA UNIVERSITY</div>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="top-info">
+          <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+          <span><i class="fas fa-envelope"></i> admissions@likitha.edu</span>
+        </div>
+        <div class="top-actions">
+          <span><i class="fas fa-calendar-alt"></i> Fall Admissions Open 2026-27</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="nav-bar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo-wrapper">
+          <svg class="logo-svg" width="40" height="40" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+            <defs>
+              <linearGradient id="logoGradIndex" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-color)" />
+                <stop offset="100%" stop-color="#f472b6" />
+              </linearGradient>
+            </defs>
+            <rect width="500" height="500" rx="100" fill="url(#logoGradIndex)" />
+            <path d="M180 120 V380 H350" fill="none" stroke="#ffffff" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="logo-text">
+            <h1 class="logo-title">Likitha University</h1>
+            <div class="logo-motto">Inspiring Innovation & Leadership</div>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="pages/about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="pages/departments.html" class="nav-link">Departments</a></li>
+            <li class="nav-item"><a href="pages/courses.html" class="nav-link">Courses</a></li>
+            <li class="nav-item"><a href="pages/admissions.html" class="nav-link">Admissions</a></li>
+            <li class="nav-item"><a href="pages/placements.html" class="nav-link">Placements</a></li>
+            <li class="nav-item"><a href="pages/faculty.html" class="nav-link">Faculty</a></li>
+            <li class="nav-item"><a href="pages/events.html" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="pages/gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="pages/contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+            <i class="fas fa-moon moon-icon"></i>
+            <i class="fas fa-sun sun-icon"></i>
+          </button>
+          <button class="hamburger" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Slider Section -->
+  <section class="hero-section">
+    <div class="slider-container">
+      
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <img class="slide-image" src="assets/images/campus/hero1.svg" alt="Likitha Campus View">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <div class="hero-stats-badge"><i class="fas fa-award"></i> Ranked Tier-1 University</div>
+          <div class="slide-subtitle">Welcome to Likitha University</div>
+          <h2 class="slide-title">Empowering Futures, Inspiring Leaders</h2>
+          <p class="slide-desc">Providing world-class engineering, management, and technology education with industry-aligned curriculum and placement track records.</p>
+          <div class="slide-actions">
+            <a href="pages/admissions.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Apply Now</a>
+            <a href="pages/gallery.html" class="btn btn-secondary"><i class="fas fa-compass"></i> Explore Campus</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img class="slide-image" src="assets/images/campus/hero2.svg" alt="Likitha Library and Laboratories">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <div class="hero-stats-badge"><i class="fas fa-microscope"></i> Modern Research Infrastructure</div>
+          <div class="slide-subtitle">State-of-the-Art Labs</div>
+          <h2 class="slide-title">Fostering Scientific Innovation</h2>
+          <p class="slide-desc">With over 50+ cutting-edge laboratory spaces, research-driven curriculum, and highly qualified academic guidance.</p>
+          <div class="slide-actions">
+            <a href="pages/departments.html" class="btn btn-primary"><i class="fas fa-graduation-cap"></i> Departments</a>
+            <a href="pages/courses.html" class="btn btn-secondary"><i class="fas fa-book-open"></i> View Courses</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img class="slide-image" src="assets/images/campus/hero3.svg" alt="Likitha Placement Success">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <div class="hero-stats-badge"><i class="fas fa-briefcase"></i> 98% Placement Rate</div>
+          <div class="slide-subtitle">Placement Cell excellence</div>
+          <h2 class="slide-title">Kickstart Your Professional Journey</h2>
+          <p class="slide-desc">Get placed in global companies like TCS, Infosys, Accenture, Wipro, and Wipro. Prepare yourself with intensive mock camps.</p>
+          <div class="slide-actions">
+            <a href="pages/placements.html" class="btn btn-primary"><i class="fas fa-chart-line"></i> Placement Stats</a>
+            <a href="pages/contact.html" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Connect With Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="slider-arrow slider-arrow-prev" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+      <button class="slider-arrow slider-arrow-next" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+
+      <!-- Indicators -->
+      <div class="slider-indicators"></div>
+    </div>
+  </section>
+
+  <!-- Admission Alert Banner -->
+  <div class="alert-banner">
+    <div class="container alert-container">
+      <div class="alert-content">
+        <span class="alert-badge">Alert</span>
+        <div class="alert-text">
+          <h3>Admissions Open for Academic Year 2026-27</h3>
+          <p>Get up to 50% merit scholarship based on entrance examinations score. Registration closing soon!</p>
+        </div>
+      </div>
+      <div class="alert-actions">
+        <a href="pages/admissions.html" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i> Apply Online</a>
+        <a href="#" class="btn btn-secondary btn-sm btn-download-brochure"><i class="fas fa-download"></i> Brochure</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Last Viewed Department Banner (Hidden by default, shown via JS) -->
+  <div id="last-viewed-dept-banner" class="alert-banner" style="display: none; background: linear-gradient(135deg, var(--accent-color), #0ea5e9); border-bottom: none;">
+    <div class="container alert-container">
+      <div class="alert-content">
+        <span class="alert-badge" style="background-color: var(--primary-color);"><i class="fas fa-eye"></i> Affinity</span>
+        <div class="alert-text">
+          <h3>Welcome Back! Continue Exploring the <span class="dept-name" style="text-decoration: underline; font-weight: 700;"></span> Department</h3>
+          <p>Read HOD message, core values, research projects and curriculum.</p>
+        </div>
+      </div>
+      <div class="alert-actions">
+        <a href="pages/departments.html" class="btn btn-dark btn-sm">Jump to Details</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Welcome / Intro Section -->
+  <section class="intro-section">
+    <div class="container">
+      <div class="placement-stats-row">
+        <div class="animate-on-scroll animate-slide-up">
+          <span class="section-tag">About Likitha</span>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Leading the Path to Innovation</h2>
+          <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+            Established with a vision to build a hub of intellectual development and career training, Likitha University stands as one of the premier institutions of the region.
+          </p>
+          <p style="color: var(--text-muted); margin-bottom: 2rem;">
+            Our rigorous training models, multidisciplinary research collaborations, and dedicated center for corporate relations ensure that students emerge not just as graduates, but as technology visionaries capable of leading modern transformation.
+          </p>
+          <div style="display: flex; gap: 1rem;">
+            <a href="pages/about.html" class="btn btn-primary">Read Principal's Message</a>
+            <a href="pages/courses.html" class="btn btn-secondary">Explore Courses</a>
+          </div>
+        </div>
+        <div class="animate-on-scroll animate-zoom-in" style="display: flex; justify-content: center; position: relative;">
+          <img src="assets/images/campus/welcome.svg" alt="Likitha Infrastructure Building" style="border-radius: var(--radius-lg); box-shadow: var(--hover-shadow); width: 100%; max-width: 500px; height: 320px; object-fit: cover;">
+          <div style="position: absolute; bottom: -1rem; left: 1rem; background-color: var(--surface-color); border: 2px solid var(--accent-color); border-radius: var(--radius-md); padding: 1rem; box-shadow: var(--card-shadow);">
+            <h4 style="color: var(--accent-color); font-size: 1.5rem; margin: 0;">20+ Years</h4>
+            <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Academic Excellence</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stats-card">
+          <div class="stats-icon"><i class="fas fa-user-graduate"></i></div>
+          <div class="stats-number" data-target="5000" data-suffix="+">0</div>
+          <div class="stats-label">Enrolled Students</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="stats-number" data-target="350" data-suffix="+">0</div>
+          <div class="stats-label">Qualified Faculty</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="stats-number" data-target="98" data-suffix="%">0</div>
+          <div class="stats-label">Placement Record</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-icon"><i class="fas fa-building"></i></div>
+          <div class="stats-number" data-target="150" data-suffix="+">0</div>
+          <div class="stats-label">Top Recruiters</div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-icon"><i class="fas fa-flask"></i></div>
+          <div class="stats-number" data-target="50" data-suffix="+">0</div>
+          <div class="stats-label">Scientific Labs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest News & achievements Grid -->
+  <section class="news-section" style="background-color: var(--surface-alt);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Updates</span>
+        <h2 class="section-title">Latest News & Announcements</h2>
+        <p class="section-desc">Keep track of upcoming deadlines, examinations notifications, and college accolades.</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- News Item 1 -->
+        <article class="card animate-on-scroll animate-slide-up">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="assets/images/events/news1.svg" alt="Likitha Hackathon Winner">
+            <span class="card-badge">Achievement</span>
+          </div>
+          <div class="card-content">
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;"><i class="fas fa-calendar-alt"></i> July 3, 2026</div>
+            <h3 class="card-title">Likitha CSE Team Wins Smart India Hackathon 2026</h3>
+            <p class="card-desc">Our final-year computer engineering squad secured the grand prize of $1.5k at national hackathon for developing decentralized healthcare locker solution.</p>
+            <a href="pages/events.html" style="color: var(--accent-color); font-weight: 600; display: inline-flex; align-items: center; gap: 0.3rem;">Read Full Story <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- News Item 2 -->
+        <article class="card animate-on-scroll animate-slide-up" style="transition-delay: 0.1s;">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="assets/images/events/news2.svg" alt="College Campus Library">
+            <span class="card-badge">Notice</span>
+          </div>
+          <div class="card-content">
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;"><i class="fas fa-calendar-alt"></i> June 28, 2026</div>
+            <h3 class="card-title">Semester Registration & Fee Payment Deadlines</h3>
+            <p class="card-desc">Circular issued for online registration of Odd Semester classes 2026-27. Payment gateway is active till July 25. Avoid late fees by paying in time.</p>
+            <a href="pages/admissions.html" style="color: var(--accent-color); font-weight: 600; display: inline-flex; align-items: center; gap: 0.3rem;">Check Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- News Item 3 -->
+        <article class="card animate-on-scroll animate-slide-up" style="transition-delay: 0.2s;">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="assets/images/events/news3.svg" alt="Likitha Graduation Hall">
+            <span class="card-badge">Placement</span>
+          </div>
+          <div class="card-content">
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;"><i class="fas fa-calendar-alt"></i> June 22, 2026</div>
+            <h3 class="card-title">120+ Placed in First Week of Accenture Recruitment Drive</h3>
+            <p class="card-desc">The placement department announces stellar placements. Top software development engineer packages hit $18 LPA. Drives for other tech units to commence.</p>
+            <a href="pages/placements.html" style="color: var(--accent-color); font-weight: 600; display: inline-flex; align-items: center; gap: 0.3rem;">Recruitment Schedule <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Our Alumni Say</h2>
+        <p class="section-desc">Real stories of career acceleration and personal development from our proud graduates.</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Testimonial 1 -->
+        <div class="stats-card animate-on-scroll animate-slide-up" style="text-align: left; padding: 2.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <img src="assets/images/faculty/alumni1.svg" alt="Sophia Mitchell" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-color);">
+            <div>
+              <h4 style="margin: 0; font-size: 1.1rem;">Sophia Mitchell</h4>
+              <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">SDE at Microsoft (CSE '24)</p>
+            </div>
+          </div>
+          <p style="font-style: italic; color: var(--text-muted); flex-grow: 1;">
+            "Likitha University was catalytic to my tech career. The labs are equipped with high-performance clusters and the mentorship from research-oriented professors led me to file two patents in my final year. An unmatched learning environment."
+          </p>
+          <div style="color: var(--accent-color); margin-top: 1.5rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="stats-card animate-on-scroll animate-slide-up" style="text-align: left; padding: 2.5rem; display: flex; flex-direction: column; transition-delay: 0.1s;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <img src="assets/images/faculty/alumni2.svg" alt="David Warner" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-color);">
+            <div>
+              <h4 style="margin: 0; font-size: 1.1rem;">David Warner</h4>
+              <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Product Manager at TCS (MBA '23)</p>
+            </div>
+          </div>
+          <p style="font-style: italic; color: var(--text-muted); flex-grow: 1;">
+            "The corporate incubation cell at Likitha gave me real hands-on consultancies. Handling case studies and hosting global business models shaped my decision-making skills. I highly recommend Likitha to any prospective management student."
+          </p>
+          <div style="color: var(--accent-color); margin-top: 1.5rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="stats-card animate-on-scroll animate-slide-up" style="text-align: left; padding: 2.5rem; display: flex; flex-direction: column; transition-delay: 0.2s;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <img src="assets/images/faculty/alumni3.svg" alt="Li Na" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-color);">
+            <div>
+              <h4 style="margin: 0; font-size: 1.1rem;">Elena Rostova</h4>
+              <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">Embedded Engg at Qualcomm (ECE '24)</p>
+            </div>
+          </div>
+          <p style="font-style: italic; color: var(--text-muted); flex-grow: 1;">
+            "Robotics lab and IoT centers here are top notch. Doing projects and participating in college fests built high collaborative traits in me. The placement assistance was tireless, offering mock training sessions daily."
+          </p>
+          <div style="color: var(--accent-color); margin-top: 1.5rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section Accordion -->
+  <section class="faq-section" style="background-color: var(--surface-alt);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Queries</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Find quick answers regarding admissions criteria, hostel facilities, placements, and scholarship distributions.</p>
+      </div>
+
+      <div class="faq-accordion">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">How can I apply for undergraduate engineering courses?</span>
+            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              You can apply online by visiting our Admissions page, filling up the Application Form, uploading academic transcripts, and submitting the entry test score. Registration portal handles documents directly.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">Is hostel accommodation available for national and international students?</span>
+            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              Yes, Likitha hosts multiple multi-tier hostel buildings with single, double, and quad rooms equipped with central cooling, Wi-Fi networks, mess facilities, indoor game rooms, and 24x7 security personnel.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">What are the eligibility criteria for merit-based scholarships?</span>
+            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              Scholarships are awarded based on Board Exams scores or state/national level entrance examinations rank. Candidates with GPA > 3.8 or > 95% receive 50% tuition fee waiver automatically.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">What kind of internship opportunities does placement cell facilitate?</span>
+            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              The corporate relations division facilitates industry-integrated internships during the pre-final year. Our students regularly get paid internships in Microsoft, Qualcomm, TCS, and Wipro with average stipend exceeding $500/month.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <span class="faq-question">When is the last date to register and pay admission fees?</span>
+            <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-body">
+            <div class="faq-content">
+              For Fall Session 2026-27, online registration closes on July 31, 2026. Document verification and seat confirmation fee payment must be done on or before August 10, 2026.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" style="background: linear-gradient(135deg, var(--primary-color), var(--accent-hover)); color: #fff; padding: 6rem 0; text-align: center; overflow: hidden; border-bottom: 2px solid var(--accent-color);">
+    <div class="container animate-on-scroll animate-zoom-in">
+      <h2 style="font-size: 2.8rem; font-weight: 800; margin-bottom: 1.5rem;">Join the Likitha Global Community</h2>
+      <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2.5rem auto; opacity: 0.9;">
+        Build a robust platform for research, engineering excellence, and future technologies. Consult with an admissions officer today.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="pages/admissions.html" class="btn btn-primary" style="background-color: #fff; color: var(--primary-color); font-weight: 600;"><i class="fas fa-edit"></i> Apply for Fall Session</a>
+        <a href="pages/contact.html" class="btn btn-secondary" style="border-color: #fff; color: #fff;"><i class="fas fa-calendar-check"></i> Book Campus Tour</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>Likitha University</h3>
+          <p>
+            Ranked amongst the nation's premium engineering and research hubs, Likitha University delivers excellence in higher technical education and career launch.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="pages/about.html">About Institution</a></li>
+            <li><a href="pages/courses.html">Courses & Intake</a></li>
+            <li><a href="pages/admissions.html">Admission Criteria</a></li>
+            <li><a href="pages/placements.html">Placement Reports</a></li>
+            <li><a href="pages/events.html">Upcoming Events</a></li>
+            <li><a href="pages/contact.html">Campus Address</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Departments</h3>
+          <ul class="footer-links">
+            <li><a href="pages/departments.html">Computer Science</a></li>
+            <li><a href="pages/departments.html">Information Technology</a></li>
+            <li><a href="pages/departments.html">Artificial Intelligence</a></li>
+            <li><a href="pages/departments.html">Electronics & Comm</a></li>
+            <li><a href="pages/departments.html">Mechanical Engg</a></li>
+            <li><a href="pages/departments.html">Civil Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>100 Likitha University campus, Tech Boulevard, Sector-12, Likitha City, AC 98012</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 123-4567 | +1 (555) 123-4568</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@likitha.edu | admissions@likitha.edu</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon - Sat: 9:00 AM to 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Likitha University. All Rights Reserved. Designed with absolute precision.</p>
+        <p>
+          <a href="#" style="margin-right: 1rem;">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top button -->
+  <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- Global Javascript Link -->
+  <script src="script.js"></script>
+</body>
+</html>

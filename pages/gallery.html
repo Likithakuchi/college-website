@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Likitha University | Photo Gallery</title>
+  <meta name="description" content="Explore campus landmarks, scientific laboratories, sports grounds, libraries, and hostels through our image gallery.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <div class="loading-text">LIKITHA UNIVERSITY</div>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="top-info">
+          <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+          <span><i class="fas fa-envelope"></i> admissions@likitha.edu</span>
+        </div>
+        <div class="top-actions">
+          <span><i class="fas fa-calendar-alt"></i> Fall Admissions Open 2026-27</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="nav-bar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo-wrapper">
+          <svg class="logo-svg" width="40" height="40" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+            <defs>
+              <linearGradient id="logoGradSub" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-color)" />
+                <stop offset="100%" stop-color="#f472b6" />
+              </linearGradient>
+            </defs>
+            <rect width="500" height="500" rx="100" fill="url(#logoGradSub)" />
+            <path d="M180 120 V380 H350" fill="none" stroke="#ffffff" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="logo-text">
+            <h1 class="logo-title">Likitha University</h1>
+            <div class="logo-motto">Inspiring Innovation & Leadership</div>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
+            <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+            <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+            <li class="nav-item"><a href="placements.html" class="nav-link">Placements</a></li>
+            <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+            <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link active">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+            <i class="fas fa-moon moon-icon"></i>
+            <i class="fas fa-sun sun-icon"></i>
+          </button>
+          <button class="hamburger" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: linear-gradient(135deg, var(--primary-color), var(--accent-hover)); color: #fff; padding: 10rem 0 5rem 0; text-align: center;">
+    <div class="container">
+      <span class="section-tag" style="background-color: rgba(255,255,255,0.15); color: #fff;">Visual Campus</span>
+      <h2 style="font-size: 3rem; font-weight: 800; margin-top: 0.5rem;">Campus Gallery</h2>
+      <p style="color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 600px; margin: 1rem auto 0 auto;">Take a virtual walkthrough of our state-of-the-art facilities and student life.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-main-section">
+    <div class="container">
+      
+      <!-- Filters -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="campus">Campus Landmarks</button>
+        <button class="filter-btn" data-filter="labs">Labs & Technology</button>
+        <button class="filter-btn" data-filter="library">Central Library</button>
+        <button class="filter-btn" data-filter="sports">Sports Arena</button>
+        <button class="filter-btn" data-filter="hostel">Hostels & Cafeteria</button>
+        <button class="filter-btn" data-filter="events">Events & Activities</button>
+      </div>
+
+      <!-- Fluid Grid -->
+      <div class="gallery-grid">
+        
+        <!-- Item 1 -->
+        <div class="gallery-item" data-category="campus">
+          <img src="../assets/images/gallery/campus1.svg" alt="Likitha Front Gateway Landmark">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Likitha Front Gateway Landmark</h4>
+              <span>Campus Landmark</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item" data-category="labs">
+          <img src="../assets/images/gallery/lab1.svg" alt="High Performance Computing Cluster">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>High Performance Computing Cluster</h4>
+              <span>Labs & Technology</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item" data-category="library">
+          <img src="../assets/images/gallery/library1.svg" alt="Multi-level Central Study Archive">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Multi-level Central Study Archive</h4>
+              <span>Central Library</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item" data-category="sports">
+          <img src="../assets/images/gallery/sports1.svg" alt="Likitha Athletics Track Arena">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Likitha Athletics Track Arena</h4>
+              <span>Sports Arena</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item" data-category="hostel">
+          <img src="../assets/images/gallery/hostel1.svg" alt="Double Bed Study Room Suite">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Double Bed Study Room Suite</h4>
+              <span>Hostels & Cafeteria</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item" data-category="events">
+          <img src="../assets/images/gallery/event1.svg" alt="Coding Hackathon Design Phase">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Coding Hackathon Design Phase</h4>
+              <span>Events & Activities</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="gallery-item" data-category="campus">
+          <img src="../assets/images/gallery/campus2.svg" alt="Main Incubation Center Square">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Main Incubation Center Square</h4>
+              <span>Campus Landmark</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="gallery-item" data-category="labs">
+          <img src="../assets/images/gallery/lab2.svg" alt="IoT Smart Devices Workbench">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>IoT Smart Devices Workbench</h4>
+              <span>Labs & Technology</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="gallery-item" data-category="hostel">
+          <img src="../assets/images/gallery/hostel2.svg" alt="Central Cafeteria Food Square">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Central Cafeteria Food Square</h4>
+              <span>Hostels & Cafeteria</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal Container -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <img class="lightbox-img" src="" alt="Lightbox View">
+      <div class="lightbox-caption"></div>
+      <button class="lightbox-btn lightbox-prev" aria-label="Previous Image"><i class="fas fa-chevron-left"></i></button>
+      <button class="lightbox-btn lightbox-next" aria-label="Next Image"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>Likitha University</h3>
+          <p>
+            Ranked amongst the nation's premium engineering and research hubs, Likitha University delivers excellence in higher technical education and career launch.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Institution</a></li>
+            <li><a href="courses.html">Courses & Intake</a></li>
+            <li><a href="departments.html">About Departments</a></li>
+            <li><a href="placements.html">Placement Reports</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="contact.html">Campus Address</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Departments</h3>
+          <ul class="footer-links">
+            <li><a href="departments.html">Computer Science</a></li>
+            <li><a href="departments.html">Information Technology</a></li>
+            <li><a href="departments.html">Artificial Intelligence</a></li>
+            <li><a href="departments.html">Electronics & Comm</a></li>
+            <li><a href="departments.html">Mechanical Engg</a></li>
+            <li><a href="departments.html">Civil Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>100 Likitha University campus, Tech Boulevard, Sector-12, Likitha City, AC 98012</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 123-4567 | +1 (555) 123-4568</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@likitha.edu | admissions@likitha.edu</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon - Sat: 9:00 AM to 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Likitha University. All Rights Reserved. Designed with absolute precision.</p>
+        <p>
+          <a href="#" style="margin-right: 1rem;">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top button -->
+  <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="../script.js"></script>
+</body>
+</html>

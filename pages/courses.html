@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Likitha University | Courses Offered</title>
+  <meta name="description" content="Explore our undergraduate and postgraduate degree courses, duration details, eligibility requirements, and student intakes.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <div class="loading-text">LIKITHA UNIVERSITY</div>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="top-info">
+          <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+          <span><i class="fas fa-envelope"></i> admissions@likitha.edu</span>
+        </div>
+        <div class="top-actions">
+          <span><i class="fas fa-calendar-alt"></i> Fall Admissions Open 2026-27</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="nav-bar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo-wrapper">
+          <svg class="logo-svg" width="40" height="40" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+            <defs>
+              <linearGradient id="logoGradSub" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-color)" />
+                <stop offset="100%" stop-color="#f472b6" />
+              </linearGradient>
+            </defs>
+            <rect width="500" height="500" rx="100" fill="url(#logoGradSub)" />
+            <path d="M180 120 V380 H350" fill="none" stroke="#ffffff" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="logo-text">
+            <h1 class="logo-title">Likitha University</h1>
+            <div class="logo-motto">Inspiring Innovation & Leadership</div>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
+            <li class="nav-item"><a href="courses.html" class="nav-link active">Courses</a></li>
+            <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+            <li class="nav-item"><a href="placements.html" class="nav-link">Placements</a></li>
+            <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+            <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+            <i class="fas fa-moon moon-icon"></i>
+            <i class="fas fa-sun sun-icon"></i>
+          </button>
+          <button class="hamburger" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: linear-gradient(135deg, var(--primary-color), var(--accent-hover)); color: #fff; padding: 10rem 0 5rem 0; text-align: center;">
+    <div class="container">
+      <span class="section-tag" style="background-color: rgba(255,255,255,0.15); color: #fff;">Academics</span>
+      <h2 style="font-size: 3rem; font-weight: 800; margin-top: 0.5rem;">Academic Programs</h2>
+      <p style="color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 600px; margin: 1rem auto 0 auto;">Select from our highly ranked graduate and postgraduate degree frameworks.</p>
+    </div>
+  </section>
+
+  <!-- Course Directory Section -->
+  <section class="courses-section">
+    <div class="container">
+      
+      <!-- Search Bar -->
+      <div class="search-filter-bar" style="justify-content: center;">
+        <div class="search-input-wrapper" style="max-width: 500px;">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="course-search" placeholder="Search courses by title or keyword (e.g. Technology)...">
+        </div>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="tabs-header">
+        <button class="tab-btn active" data-tab="undergraduate-panel">Undergraduate (UG)</button>
+        <button class="tab-btn" data-tab="postgraduate-panel">Postgraduate (PG)</button>
+      </div>
+
+      <!-- Tab Panels -->
+      <div class="tabs-content">
+        
+        <!-- UG Panel -->
+        <div id="undergraduate-panel" class="tab-panel active">
+          <div class="course-grid">
+            
+            <!-- B.Tech -->
+            <div class="card course-card animate-on-scroll animate-slide-up">
+              <div class="card-content" style="padding: 2rem;">
+                <span class="section-tag" style="margin-bottom: 1rem;">UG Program</span>
+                <h3 class="card-title">Bachelor of Technology (B.Tech)</h3>
+                <p class="card-desc">Our flagship engineering curriculum. Emphasizes hardware architectures, database designs, computer systems, mechanical engineering, and smart grids.</p>
+                <div class="course-specs">
+                  <div>
+                    <span class="spec-val">4 Years</span>
+                    <span class="spec-label">Duration</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">10+2 PCM</span>
+                    <span class="spec-label">Eligibility</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">600 Total</span>
+                    <span class="spec-label">Intake</span>
+                  </div>
+                </div>
+                <a href="admissions.html" class="btn btn-primary btn-sm" style="width: 100%;"><i class="fas fa-edit"></i> Apply for B.Tech</a>
+              </div>
+            </div>
+
+            <!-- BBA -->
+            <div class="card course-card animate-on-scroll animate-slide-up" style="transition-delay: 0.1s;">
+              <div class="card-content" style="padding: 2rem;">
+                <span class="section-tag" style="margin-bottom: 1rem;">UG Program</span>
+                <h3 class="card-title">Bachelor of Business Administration (BBA)</h3>
+                <p class="card-desc">Designed to nurture management vision, corporate leadership skills, strategic market development, and early financial analysis.</p>
+                <div class="course-specs">
+                  <div>
+                    <span class="spec-val">3 Years</span>
+                    <span class="spec-label">Duration</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">10+2 Any</span>
+                    <span class="spec-label">Eligibility</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">120 Total</span>
+                    <span class="spec-label">Intake</span>
+                  </div>
+                </div>
+                <a href="admissions.html" class="btn btn-primary btn-sm" style="width: 100%;"><i class="fas fa-edit"></i> Apply for BBA</a>
+              </div>
+            </div>
+
+            <!-- BCA -->
+            <div class="card course-card animate-on-scroll animate-slide-up" style="transition-delay: 0.2s;">
+              <div class="card-content" style="padding: 2rem;">
+                <span class="section-tag" style="margin-bottom: 1rem;">UG Program</span>
+                <h3 class="card-title">Bachelor of Computer Applications (BCA)</h3>
+                <p class="card-desc">Focuses on coding applications, software scripting structures, database networking models, and systems administration frameworks.</p>
+                <div class="course-specs">
+                  <div>
+                    <span class="spec-val">3 Years</span>
+                    <span class="spec-label">Duration</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">10+2 Math</span>
+                    <span class="spec-label">Eligibility</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">120 Total</span>
+                    <span class="spec-label">Intake</span>
+                  </div>
+                </div>
+                <a href="admissions.html" class="btn btn-primary btn-sm" style="width: 100%;"><i class="fas fa-edit"></i> Apply for BCA</a>
+              </div>
+            </div>
+
+            <!-- B.Com -->
+            <div class="card course-card animate-on-scroll animate-slide-up">
+              <div class="card-content" style="padding: 2rem;">
+                <span class="section-tag" style="margin-bottom: 1rem;">UG Program</span>
+                <h3 class="card-title">Bachelor of Commerce (B.Com)</h3>
+                <p class="card-desc">Prepares students for professions in corporate accounting systems, auditing regulations, tax architectures, and trade policies.</p>
+                <div class="course-specs">
+                  <div>
+                    <span class="spec-val">3 Years</span>
+                    <span class="spec-label">Duration</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">10+2 Commerce</span>
+                    <span class="spec-label">Eligibility</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">180 Total</span>
+                    <span class="spec-label">Intake</span>
+                  </div>
+                </div>
+                <a href="admissions.html" class="btn btn-primary btn-sm" style="width: 100%;"><i class="fas fa-edit"></i> Apply for B.Com</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- PG Panel -->
+        <div id="postgraduate-panel" class="tab-panel">
+          <div class="course-grid">
+            
+            <!-- M.Tech -->
+            <div class="card course-card">
+              <div class="card-content" style="padding: 2rem;">
+                <span class="section-tag" style="margin-bottom: 1rem;">PG Program</span>
+                <h3 class="card-title">Master of Technology (M.Tech)</h3>
+                <p class="card-desc">Advanced postgraduate specialization. Dedicated research tracks in VLSI Design, Cloud Platforms, Thermal Structures, and Data Analytics.</p>
+                <div class="course-specs">
+                  <div>
+                    <span class="spec-val">2 Years</span>
+                    <span class="spec-label">Duration</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">B.Tech / GATE</span>
+                    <span class="spec-label">Eligibility</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">90 Total</span>
+                    <span class="spec-label">Intake</span>
+                  </div>
+                </div>
+                <a href="admissions.html" class="btn btn-primary btn-sm" style="width: 100%;"><i class="fas fa-edit"></i> Apply for M.Tech</a>
+              </div>
+            </div>
+
+            <!-- MBA -->
+            <div class="card course-card">
+              <div class="card-content" style="padding: 2rem;">
+                <span class="section-tag" style="margin-bottom: 1rem;">PG Program</span>
+                <h3 class="card-title">Master of Business Administration (MBA)</h3>
+                <p class="card-desc">Our highly ranked management course. Majors in Branding Management, Financial Analytics, Supply Chain Logistics, and Incubation.</p>
+                <div class="course-specs">
+                  <div>
+                    <span class="spec-val">2 Years</span>
+                    <span class="spec-label">Duration</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">Graduate / CAT</span>
+                    <span class="spec-label">Eligibility</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">120 Total</span>
+                    <span class="spec-label">Intake</span>
+                  </div>
+                </div>
+                <a href="admissions.html" class="btn btn-primary btn-sm" style="width: 100%;"><i class="fas fa-edit"></i> Apply for MBA</a>
+              </div>
+            </div>
+
+            <!-- MCA -->
+            <div class="card course-card">
+              <div class="card-content" style="padding: 2rem;">
+                <span class="section-tag" style="margin-bottom: 1rem;">PG Program</span>
+                <h3 class="card-title">Master of Computer Applications (MCA)</h3>
+                <p class="card-desc">Advanced system applications architecture. Includes machine learning algorithms, deep cloud servers systems, and enterprise design.</p>
+                <div class="course-specs">
+                  <div>
+                    <span class="spec-val">2 Years</span>
+                    <span class="spec-label">Duration</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">BCA / B.Sc Math</span>
+                    <span class="spec-label">Eligibility</span>
+                  </div>
+                  <div>
+                    <span class="spec-val">60 Total</span>
+                    <span class="spec-label">Intake</span>
+                  </div>
+                </div>
+                <a href="admissions.html" class="btn btn-primary btn-sm" style="width: 100%;"><i class="fas fa-edit"></i> Apply for MCA</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>Likitha University</h3>
+          <p>
+            Ranked amongst the nation's premium engineering and research hubs, Likitha University delivers excellence in higher technical education and career launch.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Institution</a></li>
+            <li><a href="courses.html">Courses & Intake</a></li>
+            <li><a href="departments.html">About Departments</a></li>
+            <li><a href="placements.html">Placement Reports</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="contact.html">Campus Address</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Departments</h3>
+          <ul class="footer-links">
+            <li><a href="departments.html">Computer Science</a></li>
+            <li><a href="departments.html">Information Technology</a></li>
+            <li><a href="departments.html">Artificial Intelligence</a></li>
+            <li><a href="departments.html">Electronics & Comm</a></li>
+            <li><a href="departments.html">Mechanical Engg</a></li>
+            <li><a href="departments.html">Civil Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>100 Likitha University campus, Tech Boulevard, Sector-12, Likitha City, AC 98012</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 123-4567 | +1 (555) 123-4568</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@likitha.edu | admissions@likitha.edu</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon - Sat: 9:00 AM to 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Likitha University. All Rights Reserved. Designed with absolute precision.</p>
+        <p>
+          <a href="#" style="margin-right: 1rem;">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top button -->
+  <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="../script.js"></script>
+</body>
+</html>

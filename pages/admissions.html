@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Likitha University | Admissions</title>
+  <meta name="description" content="Apply to Likitha University. Read about our step-by-step admissions timeline, tuition fees structure, and scholarships eligibility.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Inline helper for admissions timeline styling */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      border-left: 2px solid var(--border-color);
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 3rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2.55rem;
+      top: 0.25rem;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--accent-color);
+      border: 4px solid var(--bg-color);
+    }
+    .timeline-date {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+    .timeline-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    /* Table Styling */
+    .table-container {
+      overflow-x: auto;
+      margin: 2rem 0;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      box-shadow: var(--card-shadow);
+      background-color: var(--surface-color);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    th, td {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    th {
+      background-color: var(--surface-alt);
+      font-weight: 700;
+      color: var(--text-color);
+      font-family: var(--font-heading);
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <div class="loading-text">LIKITHA UNIVERSITY</div>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="top-info">
+          <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+          <span><i class="fas fa-envelope"></i> admissions@likitha.edu</span>
+        </div>
+        <div class="top-actions">
+          <span><i class="fas fa-calendar-alt"></i> Fall Admissions Open 2026-27</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="nav-bar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo-wrapper">
+          <svg class="logo-svg" width="40" height="40" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+            <defs>
+              <linearGradient id="logoGradSub" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-color)" />
+                <stop offset="100%" stop-color="#f472b6" />
+              </linearGradient>
+            </defs>
+            <rect width="500" height="500" rx="100" fill="url(#logoGradSub)" />
+            <path d="M180 120 V380 H350" fill="none" stroke="#ffffff" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="logo-text">
+            <h1 class="logo-title">Likitha University</h1>
+            <div class="logo-motto">Inspiring Innovation & Leadership</div>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
+            <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+            <li class="nav-item"><a href="admissions.html" class="nav-link active">Admissions</a></li>
+            <li class="nav-item"><a href="placements.html" class="nav-link">Placements</a></li>
+            <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+            <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+            <i class="fas fa-moon moon-icon"></i>
+            <i class="fas fa-sun sun-icon"></i>
+          </button>
+          <button class="hamburger" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: linear-gradient(135deg, var(--primary-color), var(--accent-hover)); color: #fff; padding: 10rem 0 5rem 0; text-align: center;">
+    <div class="container">
+      <span class="section-tag" style="background-color: rgba(255,255,255,0.15); color: #fff;">Apply Today</span>
+      <h2 style="font-size: 3rem; font-weight: 800; margin-top: 0.5rem;">Admissions Hub</h2>
+      <p style="color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 600px; margin: 1rem auto 0 auto;">Review admission requirements, fees breakdown, and apply directly via our portal.</p>
+    </div>
+  </section>
+
+  <!-- Admission Process Timeline -->
+  <section class="timeline-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Steps</span>
+        <h2 class="section-title">Admission Process Timeline</h2>
+        <p class="section-desc">Understand the step-by-step roadmap to enroll in our technical courses.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Step 1 -->
+        <div class="timeline-item">
+          <div class="timeline-date">Step 1: Online Application</div>
+          <h3 class="timeline-title">Fill up Application Form</h3>
+          <p style="color: var(--text-muted);">Fill in academic history, select desired stream, and pay a $50 registration fee via the secure online gateway below. Form draft saves automatically.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-item">
+          <div class="timeline-date">Step 2: Entrance Examination</div>
+          <h3 class="timeline-title">Take Entrance Evaluation</h3>
+          <p style="color: var(--text-muted);">Shortlisted candidates will be notified to take the online LIKITHA-SAT test. Exemption is given for candidates with national ranks (SAT/GATE/JEE).</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-item">
+          <div class="timeline-date">Step 3: Counseling & Interview</div>
+          <h3 class="timeline-title">Interactive Counseling Board</h3>
+          <p style="color: var(--text-muted);">Shortlisted applicants undergo academic counselling and personality checks with the advisory board to finalize major allocations.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-item">
+          <div class="timeline-date">Step 4: Document Verification</div>
+          <h3 class="timeline-title">Secure Admissions & Register</h3>
+          <p style="color: var(--text-muted);">Submit academic mark sheets, recommendation letters, health certificates, and identification proof. Download brochure to view the complete list.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fees & Scholarships -->
+  <section class="fees-section" style="background-color: var(--surface-alt);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Financials</span>
+        <h2 class="section-title">Fee Structure & Scholarships</h2>
+        <p class="section-desc">View our tuition structures and merit-based financial aid policies.</p>
+      </div>
+
+      <!-- Fees Table -->
+      <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;"><i class="fas fa-file-invoice-dollar" style="color: var(--accent-color);"></i> Course Fees Breakdown (Per Semester)</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Course Stream</th>
+              <th>Tuition Fee</th>
+              <th>Lab & Library Fee</th>
+              <th>Exams Fee</th>
+              <th>Hostel Fee (Optional)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>B.Tech (Engineering)</td>
+              <td>$1,800</td>
+              <td>$350</td>
+              <td>$100</td>
+              <td>$650</td>
+            </tr>
+            <tr>
+              <td>BBA (Management)</td>
+              <td>$1,200</td>
+              <td>$150</td>
+              <td>$100</td>
+              <td>$650</td>
+            </tr>
+            <tr>
+              <td>BCA / B.Com</td>
+              <td>$1,000</td>
+              <td>$200</td>
+              <td>$100</td>
+              <td>$650</td>
+            </tr>
+            <tr>
+              <td>M.Tech (Engineering)</td>
+              <td>$2,200</td>
+              <td>$400</td>
+              <td>$150</td>
+              <td>$650</td>
+            </tr>
+            <tr>
+              <td>MBA / MCA</td>
+              <td>$1,600</td>
+              <td>$250</td>
+              <td>$150</td>
+              <td>$650</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Scholarships Table -->
+      <h3 style="font-size: 1.5rem; font-weight: 700; margin: 3rem 0 1rem 0;"><i class="fas fa-award" style="color: var(--accent-color);"></i> Merit Scholarships Schemes</h3>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Scholarship Name</th>
+              <th>Eligibility Score Criteria</th>
+              <th>Fee Waiver Percentage</th>
+              <th>Maintenance Conditions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Likitha Trustee Scholar</td>
+              <td>GPA > 3.90 or Top 1% in entrance score</td>
+              <td>100% Tuition Fee</td>
+              <td>Maintain GPA > 3.75</td>
+            </tr>
+            <tr>
+              <td>Deans Merit Scholar</td>
+              <td>GPA > 3.70 or Top 5% in entrance score</td>
+              <td>50% Tuition Fee</td>
+              <td>Maintain GPA > 3.50</td>
+            </tr>
+            <tr>
+              <td>Sports Excellence Scholar</td>
+              <td>National level rank or certificate</td>
+              <td>40% Tuition Fee</td>
+              <td>Active participation in sports</td>
+            </tr>
+            <tr>
+              <td>Tech Incubator Grant</td>
+              <td>Top ranking in hackathons / research</td>
+              <td>30% Tuition Fee</td>
+              <td>Enroll in projects incubation</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Required Documents Accordion / Panel -->
+  <section class="docs-section">
+    <div class="container" style="max-width: 900px;">
+      <div class="section-header">
+        <span class="section-tag">Required Documents</span>
+        <h2 class="section-title">Documents Checklist</h2>
+        <p class="section-desc">Ensure you have all scan files ready before submitting the admission form.</p>
+      </div>
+
+      <div class="stats-card" style="padding: 2.5rem; text-align: left;">
+        <ul style="padding-left: 1.5rem; color: var(--text-muted); line-height: 2;">
+          <li><i class="fas fa-check-square" style="color: var(--success-color); margin-right: 0.5rem;"></i> High School / 10th Grade Graduation Certificate</li>
+          <li><i class="fas fa-check-square" style="color: var(--success-color); margin-right: 0.5rem;"></i> Higher Secondary / 12th Grade Mark Sheet (or equivalent transcript)</li>
+          <li><i class="fas fa-check-square" style="color: var(--success-color); margin-right: 0.5rem;"></i> SAT, GATE, JEE entrance score card (if applicable)</li>
+          <li><i class="fas fa-check-square" style="color: var(--success-color); margin-right: 0.5rem;"></i> Character and Migration certificate from last attended institution</li>
+          <li><i class="fas fa-check-square" style="color: var(--success-color); margin-right: 0.5rem;"></i> Three recent passport-sized color photographs</li>
+          <li><i class="fas fa-check-square" style="color: var(--success-color); margin-right: 0.5rem;"></i> Government issued Identity Proof (Passport, Driving License, National ID card)</li>
+        </ul>
+        <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#" class="btn btn-primary btn-download-brochure"><i class="fas fa-file-pdf"></i> Download Complete Brochure</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission Form -->
+  <section id="admission-form-section" style="background-color: var(--surface-alt);">
+    <div class="container" style="max-width: 800px;">
+      <div class="section-header">
+        <span class="section-tag">Form Portal</span>
+        <h2 class="section-title">Online Admission Application</h2>
+        <p class="section-desc">Fill in the fields accurately. Your draft is safely saved to local storage.</p>
+      </div>
+
+      <form id="admission-form" class="form-card">
+        
+        <div class="form-group">
+          <label for="adm-name" class="form-label">Full Name *</label>
+          <input type="text" id="adm-name" class="form-control" placeholder="Enter your full name" required>
+          <div class="form-error">Please fill in your name.</div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="adm-email" class="form-label">Email Address *</label>
+            <input type="email" id="adm-email" class="form-control" placeholder="Enter your email address" required>
+            <div class="form-error">Please fill in a valid email address.</div>
+          </div>
+          <div class="form-group">
+            <label for="adm-phone" class="form-label">Phone Number *</label>
+            <input type="tel" id="adm-phone" class="form-control" placeholder="10-digit number" required>
+            <div class="form-error">Please fill in a valid 10-digit phone number.</div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="adm-course" class="form-label">Desired Course Stream *</label>
+            <select id="adm-course" class="form-control" required style="cursor: pointer;">
+              <option value="">Select Stream</option>
+              <option value="B.Tech CSE">B.Tech (Computer Science)</option>
+              <option value="B.Tech IT">B.Tech (Information Tech)</option>
+              <option value="B.Tech AI">B.Tech (AI & Data Science)</option>
+              <option value="B.Tech ECE">B.Tech (Electronics & Comm)</option>
+              <option value="BBA">Bachelor of Business Admin (BBA)</option>
+              <option value="BCA">Bachelor of Computer Apps (BCA)</option>
+              <option value="MBA">Master of Business Admin (MBA)</option>
+              <option value="MCA">Master of Computer Apps (MCA)</option>
+            </select>
+            <div class="form-error">Please select a course stream.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="adm-gender" class="form-label">Gender *</label>
+            <select id="adm-gender" class="form-control" required style="cursor: pointer;">
+              <option value="">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other / Decline</option>
+            </select>
+            <div class="form-error">Please select gender.</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="adm-state" class="form-label">State / Country of Residence *</label>
+          <input type="text" id="adm-state" class="form-control" placeholder="e.g. New York, USA" required>
+          <div class="form-error">Please fill in your residency state or country.</div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <button type="submit" class="btn btn-primary" style="padding: 1rem 3rem;"><i class="fas fa-paper-plane"></i> Submit Application</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>Likitha University</h3>
+          <p>
+            Ranked amongst the nation's premium engineering and research hubs, Likitha University delivers excellence in higher technical education and career launch.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Institution</a></li>
+            <li><a href="courses.html">Courses & Intake</a></li>
+            <li><a href="departments.html">About Departments</a></li>
+            <li><a href="placements.html">Placement Reports</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="contact.html">Campus Address</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Departments</h3>
+          <ul class="footer-links">
+            <li><a href="departments.html">Computer Science</a></li>
+            <li><a href="departments.html">Information Technology</a></li>
+            <li><a href="departments.html">Artificial Intelligence</a></li>
+            <li><a href="departments.html">Electronics & Comm</a></li>
+            <li><a href="departments.html">Mechanical Engg</a></li>
+            <li><a href="departments.html">Civil Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>100 Likitha University campus, Tech Boulevard, Sector-12, Likitha City, AC 98012</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 123-4567 | +1 (555) 123-4568</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@likitha.edu | admissions@likitha.edu</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon - Sat: 9:00 AM to 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Likitha University. All Rights Reserved. Designed with absolute precision.</p>
+        <p>
+          <a href="#" style="margin-right: 1rem;">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top button -->
+  <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="../script.js"></script>
+</body>
+</html>

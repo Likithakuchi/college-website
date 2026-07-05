@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Likitha University | Academic Departments</title>
+  <meta name="description" content="Explore our academic departments including Computer Science, AI & Data Science, Electronics, Mechanical Engineering, MBA, and MCA.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <div class="loading-text">LIKITHA UNIVERSITY</div>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="top-info">
+          <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+          <span><i class="fas fa-envelope"></i> admissions@likitha.edu</span>
+        </div>
+        <div class="top-actions">
+          <span><i class="fas fa-calendar-alt"></i> Fall Admissions Open 2026-27</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="nav-bar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo-wrapper">
+          <svg class="logo-svg" width="40" height="40" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;">
+            <defs>
+              <linearGradient id="logoGradSub" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-color)" />
+                <stop offset="100%" stop-color="#f472b6" />
+              </linearGradient>
+            </defs>
+            <rect width="500" height="500" rx="100" fill="url(#logoGradSub)" />
+            <path d="M180 120 V380 H350" fill="none" stroke="#ffffff" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="logo-text">
+            <h1 class="logo-title">Likitha University</h1>
+            <div class="logo-motto">Inspiring Innovation & Leadership</div>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="departments.html" class="nav-link active">Departments</a></li>
+            <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+            <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+            <li class="nav-item"><a href="placements.html" class="nav-link">Placements</a></li>
+            <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+            <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+            <i class="fas fa-moon moon-icon"></i>
+            <i class="fas fa-sun sun-icon"></i>
+          </button>
+          <button class="hamburger" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background: linear-gradient(135deg, var(--primary-color), var(--accent-hover)); color: #fff; padding: 10rem 0 5rem 0; text-align: center;">
+    <div class="container">
+      <span class="section-tag" style="background-color: rgba(255,255,255,0.15); color: #fff;">Our Core Disciplines</span>
+      <h2 style="font-size: 3rem; font-weight: 800; margin-top: 0.5rem;">Academic Departments</h2>
+      <p style="color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 600px; margin: 1rem auto 0 auto;">Discover our fields of engineering, software studies, and leadership business departments.</p>
+    </div>
+  </section>
+
+  <!-- Departments Grid Section -->
+  <section class="departments-section">
+    <div class="container">
+      <div class="grid-3">
+        
+        <!-- CSE -->
+        <div class="card animate-on-scroll animate-slide-up">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/departments/cse.svg" alt="CSE Department">
+            <span class="card-badge">Engineering</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Computer Science Engineering</h3>
+            <div class="dept-hod"><i class="fas fa-user-tie"></i> HOD: <span>Dr. Rajesh Khanna</span></div>
+            <p class="card-desc">Focuses on software engineering, cloud computing architectures, cryptography, cybersecurity networks, and full-stack software development models.</p>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-sm btn-learn-dept" data-dept-name="Computer Science Engineering">Learn More</button>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-users"></i> 120 Intake</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IT -->
+        <div class="card animate-on-scroll animate-slide-up" style="transition-delay: 0.05s;">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/departments/it.svg" alt="IT Department">
+            <span class="card-badge">Engineering</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Information Technology</h3>
+            <div class="dept-hod"><i class="fas fa-user-tie"></i> HOD: <span>Dr. Sarah Jenkins</span></div>
+            <p class="card-desc">Focuses on database design algorithms, enterprise web platforms, routing configurations, mobile architectures, and information assurance systems.</p>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-sm btn-learn-dept" data-dept-name="Information Technology">Learn More</button>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-users"></i> 60 Intake</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & DS -->
+        <div class="card animate-on-scroll animate-slide-up" style="transition-delay: 0.1s;">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/departments/aids.svg" alt="AI & DS Department">
+            <span class="card-badge">Engineering</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Artificial Intelligence & Data Science</h3>
+            <div class="dept-hod"><i class="fas fa-user-tie"></i> HOD: <span>Dr. Alan Turing Jr.</span></div>
+            <p class="card-desc">Focuses on deep learning architectures, cognitive computing, big data analytics platforms, statistics, neural networks, and computer vision models.</p>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-sm btn-learn-dept" data-dept-name="Artificial Intelligence & Data Science">Learn More</button>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-users"></i> 60 Intake</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ECE -->
+        <div class="card animate-on-scroll animate-slide-up">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/departments/ece.svg" alt="ECE Department">
+            <span class="card-badge">Engineering</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Electronics & Communication</h3>
+            <div class="dept-hod"><i class="fas fa-user-tie"></i> HOD: <span>Dr. Amanda Cooper</span></div>
+            <p class="card-desc">Focuses on embedded microcontroller hardware, VLSI circuits design, wireless systems signals, satellite transmission, and hardware-software interfacing.</p>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-sm btn-learn-dept" data-dept-name="Electronics & Communication Engineering">Learn More</button>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-users"></i> 120 Intake</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- EEE -->
+        <div class="card animate-on-scroll animate-slide-up" style="transition-delay: 0.05s;">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/departments/eee.svg" alt="EEE Department">
+            <span class="card-badge">Engineering</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Electrical & Electronics</h3>
+            <div class="dept-hod"><i class="fas fa-user-tie"></i> HOD: <span>Dr. Nikola Tesla III</span></div>
+            <p class="card-desc">Focuses on power grid architectures, renewable energy generation systems, motor drives, microgrid analytics, and industrial automation models.</p>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-sm btn-learn-dept" data-dept-name="Electrical & Electronics Engineering">Learn More</button>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-users"></i> 60 Intake</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ME -->
+        <div class="card animate-on-scroll animate-slide-up" style="transition-delay: 0.1s;">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/departments/me.svg" alt="ME Department">
+            <span class="card-badge">Engineering</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Mechanical Engineering</h3>
+            <div class="dept-hod"><i class="fas fa-user-tie"></i> HOD: <span>Dr. James Watt IV</span></div>
+            <p class="card-desc">Focuses on thermodynamic design cycles, solid mechanics simulations, fluid power dynamics, robotics tooling systems, and CAD/CAM modeling.</p>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-sm btn-learn-dept" data-dept-name="Mechanical Engineering">Learn More</button>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-users"></i> 60 Intake</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Civil -->
+        <div class="card animate-on-scroll animate-slide-up">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/departments/civil.svg" alt="Civil Department">
+            <span class="card-badge">Engineering</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Civil Engineering</h3>
+            <div class="dept-hod"><i class="fas fa-user-tie"></i> HOD: <span>Dr. Marcus Vitruvius</span></div>
+            <p class="card-desc">Focuses on structural concrete analysis, soil mechanics calculations, water resources management systems, and eco-friendly urban construction materials.</p>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-sm btn-learn-dept" data-dept-name="Civil Engineering">Learn More</button>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-users"></i> 60 Intake</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MBA -->
+        <div class="card animate-on-scroll animate-slide-up" style="transition-delay: 0.05s;">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/departments/mba.svg" alt="MBA Department">
+            <span class="card-badge">Business Management</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">MBA Department</h3>
+            <div class="dept-hod"><i class="fas fa-user-tie"></i> HOD: <span>Dr. Philip Kotler Jr.</span></div>
+            <p class="card-desc">Focuses on strategic branding systems, corporate finances analytics, supply chain solutions, executive human resources, and business modeling.</p>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-sm btn-learn-dept" data-dept-name="MBA Business School">Learn More</button>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-users"></i> 120 Intake</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MCA -->
+        <div class="card animate-on-scroll animate-slide-up" style="transition-delay: 0.1s;">
+          <div class="card-img-wrapper">
+            <img class="card-img" src="../assets/images/departments/mca.svg" alt="MCA Department">
+            <span class="card-badge">Computer Applications</span>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">MCA Department</h3>
+            <div class="dept-hod"><i class="fas fa-user-tie"></i> HOD: <span>Dr. Grace Hopper II</span></div>
+            <p class="card-desc">Focuses on computational application development, database networks management, system analysis, algorithms coding, and mobile platforms solutions.</p>
+            <div class="card-footer">
+              <button class="btn btn-primary btn-sm btn-learn-dept" data-dept-name="MCA Computer Applications">Learn More</button>
+              <span style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-users"></i> 60 Intake</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>Likitha University</h3>
+          <p>
+            Ranked amongst the nation's premium engineering and research hubs, Likitha University delivers excellence in higher technical education and career launch.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Institution</a></li>
+            <li><a href="courses.html">Courses & Intake</a></li>
+            <li><a href="departments.html">About Departments</a></li>
+            <li><a href="placements.html">Placement Reports</a></li>
+            <li><a href="events.html">Upcoming Events</a></li>
+            <li><a href="contact.html">Campus Address</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Departments</h3>
+          <ul class="footer-links">
+            <li><a href="departments.html">Computer Science</a></li>
+            <li><a href="departments.html">Information Technology</a></li>
+            <li><a href="departments.html">Artificial Intelligence</a></li>
+            <li><a href="departments.html">Electronics & Comm</a></li>
+            <li><a href="departments.html">Mechanical Engg</a></li>
+            <li><a href="departments.html">Civil Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>100 Likitha University campus, Tech Boulevard, Sector-12, Likitha City, AC 98012</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+1 (555) 123-4567 | +1 (555) 123-4568</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@likitha.edu | admissions@likitha.edu</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon - Sat: 9:00 AM to 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Likitha University. All Rights Reserved. Designed with absolute precision.</p>
+        <p>
+          <a href="#" style="margin-right: 1rem;">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top button -->
+  <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="../script.js"></script>
+</body>
+</html>
