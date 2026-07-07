@@ -1957,3 +1957,34 @@ footer {
 .hero-stats-badge i {
   color: var(--accent-color);
 }
+
+/* --- ABOUT PAGE HERO & RESPONSIVE FIXES --- */
+.about-hero {
+  background: linear-gradient(135deg, #f97316, #ea580c); /* Premium orange gradient */
+  color: #ffffff;
+  padding: 13rem 0 7rem 0; /* Balanced padding on desktop */
+  text-align: center;
+}
+
+.page-banner {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-hover));
+  color: #ffffff;
+  padding: 13rem 0 7rem 0; /* Balanced padding on desktop */
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .about-hero, .page-banner {
+    padding: 11rem 0 6rem 0; /* Balanced padding on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    display: none; /* Hide top bar on mobile to prevent overlapping */
+  }
+  .about-hero, .page-banner {
+    padding: 8rem 0 5rem 0; /* Balanced padding when header-top is hidden */
+  }
+}
+
